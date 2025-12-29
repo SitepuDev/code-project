@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Pro | Template Siap Pakai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .product-card:hover img {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans text-gray-900">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+          <div class="flex-shrink-0">
+            <a
+              href="#"
+              class="text-2xl font-black text-indigo-600 tracking-tighter italic"
+            >
+              STORE<span class="text-gray-800 underline decoration-indigo-500"
+                >KITA</span
+              >
+            </a>
+          </div>
+
+          <div class="hidden md:flex space-x-10">
+            <a href="#" class="hover:text-indigo-600 font-semibold transition"
+              >Beranda</a
+            >
+            <a
+              href="#produk"
+              class="hover:text-indigo-600 font-semibold transition"
+              >Produk</a
+            >
+            <a
+              href="#tentang"
+              class="hover:text-indigo-600 font-semibold transition"
+              >Tentang Kami</a
+            >
+          </div>
+
+          <div class="flex items-center space-x-6">
+            <button class="relative hover:text-indigo-600 transition">
+              <i class="fa-solid fa-cart-shopping text-xl"></i>
+              <span
+                class="absolute -top-2 -right-2 bg-indigo-600 text-white text-[10px] rounded-full h-4 w-4 flex items-center justify-center"
+                >0</span
+              >
+            </button>
+            <button class="md:hidden text-2xl">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="relative bg-gray-900 h-[600px] flex items-center text-white">
+      <div class="absolute inset-0 opacity-50">
+        <img
+          src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1500&q=80"
+          alt="Banner"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+          Gaya Baru,<br /><span class="text-indigo-400">Harga Menantu.</span>
+        </h1>
+        <p class="text-lg md:text-xl max-w-2xl mb-10 text-gray-300">
+          Temukan berbagai produk pilihan mulai dari Fashion hingga Gadget
+          dengan jaminan keaslian 100% dan pengiriman cepat ke seluruh
+          Indonesia.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="#produk"
+            class="bg-indigo-600 hover:bg-indigo-700 px-10 py-4 rounded-full font-bold text-lg transition shadow-lg"
+            >Belanja Sekarang</a
+          >
+          <a
+            href="#"
+            class="bg-white/20 hover:bg-white/30 backdrop-blur-md px-10 py-4 rounded-full font-bold text-lg transition"
+            >Cek Promo</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section class="py-10 bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="text-center p-4 border-r last:border-0">
+          <i class="fa-solid fa-truck text-indigo-600 text-3xl mb-2"></i>
+          <h5 class="font-bold">Gratis Ongkir</h5>
+        </div>
+        <div class="text-center p-4 border-r last:border-0">
+          <i class="fa-solid fa-rotate-left text-indigo-600 text-3xl mb-2"></i>
+          <h5 class="font-bold">7 Hari Retur</h5>
+        </div>
+        <div class="text-center p-4 border-r last:border-0">
+          <i class="fa-solid fa-lock text-indigo-600 text-3xl mb-2"></i>
+          <h5 class="font-bold">Bayar Aman</h5>
+        </div>
+        <div class="text-center p-4 border-r last:border-0">
+          <i class="fa-solid fa-award text-indigo-600 text-3xl mb-2"></i>
+          <h5 class="font-bold">Originalitas</h5>
+        </div>
+      </div>
+    </section>
+
+    <main id="produk" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4 text-gray-800">Koleksi Terlaris</h2>
+        <p class="text-gray-500">Pilih produk favoritmu sekarang juga!</p>
+        <div class="h-1.5 w-24 bg-indigo-600 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div
+          class="product-card group bg-white rounded-3xl shadow-sm border overflow-hidden transition-all duration-300 hover:shadow-2xl"
+        >
+          <div class="h-72 overflow-hidden bg-gray-100 relative">
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+              class="w-full h-full object-cover transition duration-500"
+            />
+            <div
+              class="absolute top-4 right-4 bg-white p-2 rounded-full shadow hover:text-red-500 cursor-pointer transition"
+            >
+              <i class="fa-regular fa-heart text-xl"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span
+              class="text-xs font-bold text-indigo-500 uppercase tracking-widest"
+              >Sepatu</span
+            >
+            <h3 class="text-xl font-bold mt-1 text-gray-800">
+              Red Sneakers Sport
+            </h3>
+            <p class="text-indigo-600 font-black text-2xl mt-3 italic">
+              Rp 750.000
+            </p>
+            <button
+              class="w-full mt-6 bg-gray-900 text-white py-4 rounded-2xl font-bold hover:bg-indigo-600 transition shadow-lg flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-cart-plus"></i> Masuk Keranjang
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="product-card group bg-white rounded-3xl shadow-sm border overflow-hidden transition-all duration-300 hover:shadow-2xl"
+        >
+          <div class="h-72 overflow-hidden bg-gray-100 relative">
+            <img
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+              class="w-full h-full object-cover transition duration-500"
+            />
+            <span
+              class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase"
+              >Habis Dalam 2 Jam</span
+            >
+          </div>
+          <div class="p-6">
+            <span
+              class="text-xs font-bold text-indigo-500 uppercase tracking-widest"
+              >Aksesoris</span
+            >
+            <h3 class="text-xl font-bold mt-1 text-gray-800">
+              White Smartwatch V3
+            </h3>
+            <p class="text-indigo-600 font-black text-2xl mt-3 italic">
+              Rp 1.200.000
+            </p>
+            <button
+              class="w-full mt-6 bg-gray-900 text-white py-4 rounded-2xl font-bold hover:bg-indigo-600 transition shadow-lg flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-cart-plus"></i> Masuk Keranjang
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="product-card group bg-white rounded-3xl shadow-sm border overflow-hidden transition-all duration-300 hover:shadow-2xl"
+        >
+          <div class="h-72 overflow-hidden bg-gray-100 relative">
+            <img
+              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+              class="w-full h-full object-cover transition duration-500"
+            />
+          </div>
+          <div class="p-6">
+            <span
+              class="text-xs font-bold text-indigo-500 uppercase tracking-widest"
+              >Audio</span
+            >
+            <h3 class="text-xl font-bold mt-1 text-gray-800">
+              Wireless Headphones
+            </h3>
+            <p class="text-indigo-600 font-black text-2xl mt-3 italic">
+              Rp 550.000
+            </p>
+            <button
+              class="w-full mt-6 bg-gray-900 text-white py-4 rounded-2xl font-bold hover:bg-indigo-600 transition shadow-lg flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-cart-plus"></i> Masuk Keranjang
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="product-card group bg-white rounded-3xl shadow-sm border overflow-hidden transition-all duration-300 hover:shadow-2xl"
+        >
+          <div class="h-72 overflow-hidden bg-gray-100 relative">
+            <img
+              src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=600&q=80"
+              class="w-full h-full object-cover transition duration-500"
+            />
+          </div>
+          <div class="p-6">
+            <span
+              class="text-xs font-bold text-indigo-500 uppercase tracking-widest"
+              >Elektronik</span
+            >
+            <h3 class="text-xl font-bold mt-1 text-gray-800">Pro Gaming Mic</h3>
+            <p class="text-indigo-600 font-black text-2xl mt-3 italic">
+              Rp 890.000
+            </p>
+            <button
+              class="w-full mt-6 bg-gray-900 text-white py-4 rounded-2xl font-bold hover:bg-indigo-600 transition shadow-lg flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-cart-plus"></i> Masuk Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-20">
+      <div
+        class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12"
+      >
+        <div>
+          <h3 class="text-2xl font-black mb-6 italic">STOREKITA</h3>
+          <p class="text-gray-400 leading-relaxed mb-6">
+            Kami menghadirkan pengalaman belanja online yang mudah, aman, dan
+            menyenangkan. Kepuasan Anda adalah prioritas kami.
+          </p>
+          <div class="flex space-x-5">
+            <a href="#" class="text-2xl hover:text-indigo-400 transition"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="text-2xl hover:text-indigo-400 transition"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+            <a href="#" class="text-2xl hover:text-indigo-400 transition"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-6 underline decoration-indigo-500">
+            Navigasi
+          </h4>
+          <ul class="space-y-4 text-gray-400">
+            <li>
+              <a href="#" class="hover:text-white transition">Katalog Produk</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition">Promo Spesial</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition"
+                >Kebijakan Pengembalian</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition">Hubungi Kami</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-6 underline decoration-indigo-500">
+            Berlangganan Newsletter
+          </h4>
+          <p class="text-sm text-gray-400 mb-4">
+            Dapatkan info produk terbaru dan diskon menarik.
+          </p>
+          <div class="flex">
+            <input
+              type="email"
+              placeholder="Email Anda"
+              class="bg-gray-800 border-none p-4 rounded-l-xl w-full focus:ring-2 focus:ring-indigo-500"
+            />
+            <button
+              class="bg-indigo-600 px-6 rounded-r-xl font-bold hover:bg-indigo-700 transition"
+            >
+              Kirim
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto px-4 mt-20 pt-8 border-t border-gray-800 text-center text-gray-500"
+      >
+        <p>&copy; 2024 StoreKita. Dibuat dengan penuh ❤️ di Indonesia.</p>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/628123456789?text=Halo%20Admin,%20saya%20tertarik%20dengan%20produk%20di%20website%20Anda."
+      target="_blank"
+      class="fixed bottom-8 right-8 z-[9999] flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-2xl hover:bg-[#128C7E] transition-all transform hover:scale-110 group"
+    >
+      <span
+        class="absolute right-20 bg-white text-gray-800 px-4 py-2 rounded-xl shadow-lg text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border"
+      >
+        Tanya Admin (WA)
+      </span>
+
+      <i class="fa-brands fa-whatsapp text-white text-3xl"></i>
+    </a>
+  </body>
+</html>
